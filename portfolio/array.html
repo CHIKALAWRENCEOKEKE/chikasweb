@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: aqua;
+      }
+
+      .obj {
+        display: none;
+      }
+
+      .mnn {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="focus">udjhjhdjhdfh</h1>
+    <div class="obj">
+      <h1>jjkjkjkjkk</h1>
+      <h1>jjkjkjkjkk</h1>
+      <h1>jjkjkjkjkk</h1>
+    </div>
+
+    <script>
+      let main = document.getElementById("focus");
+      let object = document.getElementsByClassName("obj");
+
+      main.addEventListener("mouseenter", function change() {
+        object.ClassList.remove("obj");
+      });
+    </script>
+  </body>
+</html>
